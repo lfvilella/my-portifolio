@@ -1,0 +1,123 @@
+/* ************************************* */
+
+/**************** Slider *****************/
+
+/* ************************************* */
+
+.slider{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/bg-slider.jpg');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    color: #ffffff;
+}
+
+.slider-content{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.able-on{
+    font-size: 10pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.icons .fab{
+    font-size: 35px;
+    color: #f7f7f7;
+    margin-right: 8px;
+}
+.icons .fa:last-child{
+    margin-right: 0;
+}
+
+.cta-div{
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.btn1{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+
+    transition: all 0.5s ease-in;
+}
+.btn1:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #fd67a1;
+    border-color: #fd67a1;
+}
+
+.btn2{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    
+    transition: all 0.4s ease-in;
+
+    margin-left: -6px;
+}
+.btn2:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #5166fd;
+    border-color: #5166fd;
+}
+
+.social-networks a.fab{
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    margin-right: 2px;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: all 0.5s ease-in;
+}
+.social-networks a.fab:first-child{
+    padding: 9px 11px;
+    margin-left: 0;
+}
+.social-networks a.fab:last-child{
+    padding: 9px 11px;
+    margin-right: 0;
+}
+.social-networks a.fab:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #00cdfd;
+    border-color: #00cdfd;
+}
+
+.my-photo{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
