@@ -4,7 +4,7 @@
 
 /* ************************************* */
 
-.slider{
+.slider {
     width: 100vw;
     height: 100vh;
     background-image: url('img/bg-slider.jpg');
@@ -14,7 +14,7 @@
     background-position: center;
 }
 
-.slider-overlay{
+.slider-overlay {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -22,75 +22,73 @@
     color: #ffffff;
 }
 
-.slider-content{
+.slider-content {
     position: absolute;
     top: 20%;
     width: 100%;
 }
 
-.able-on{
+.able-on {
     font-size: 10pt;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.icons .fab{
+.icons .fab {
     font-size: 35px;
     color: #f7f7f7;
     margin-right: 8px;
 }
-.icons .fa:last-child{
+
+.icons .fa:last-child {
     margin-right: 0;
 }
 
-.cta-div{
+.cta-div {
     font-weight: 900;
     margin: 10px 0;
 }
 
-.btn1{
+.btn1 {
     padding: 13px 18px;
     background-color: transparent;
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
-
     border: 2px solid white;
     border-top-left-radius: 15px;
-
     transition: all 0.5s ease-in;
 }
-.btn1:hover{
+
+.btn1:hover {
     text-decoration: none;
     color: white;
-    background-color: #fd67a1;
-    border-color: #fd67a1;
+    background-color: #e52c61;
+    border-color: #e52c61;
 }
 
-.btn2{
+.btn2 {
     padding: 13px 18px;
     background-color: transparent;
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
-    
     border: 2px solid white;
     border-bottom-right-radius: 15px;
-    
     transition: all 0.4s ease-in;
-
     margin-left: -6px;
 }
-.btn2:hover{
+
+.btn2:hover {
     text-decoration: none;
     color: white;
     background-color: #5166fd;
     border-color: #5166fd;
 }
 
-.social-networks a.fab{
+.social-networks a.fab {
     color: white;
     font-size: 22px;
     padding: 10px;
@@ -99,25 +97,72 @@
     border-radius: 50px;
     transition: all 0.5s ease-in;
 }
-.social-networks a.fab:first-child{
+
+.social-networks a.fab:first-child {
     padding: 9px 11px;
     margin-left: 0;
 }
-.social-networks a.fab:last-child{
+
+.social-networks a.fab:last-child {
     padding: 9px 11px;
     margin-right: 0;
 }
-.social-networks a.fab:hover{
+
+.social-networks a.fab:hover {
     color: white;
     text-decoration: none;
     background-color: #00cdfd;
     border-color: #00cdfd;
 }
 
-.my-photo{
+.my-photo {
     width: 250px;
     height: 250px;
     border: 2px solid white;
     border-radius: 50%;
     margin-bottom: 70px;
+}
+
+/* ************************************* */
+
+/*************** ABOUT ME ****************/
+
+/* ************************************* */
+
+.about-me{
+    background-color: #000000d8;
+    height: 65vh;
+}
+
+.title-me{
+    position: absolute;
+    text-align: center;
+    margin-top: 40px;
+    color: #00000081;
+    z-index: 0;
+}
+.title-me h1{
+    font-size: 70pt;
+}
+
+.about-me .row{
+    padding-top: 15%;
+}
+
+.info-me {
+    background-color: #00000065;
+    box-shadow: -10px 10px 10px #000000;
+    color: white;
+    padding: 50px 80px;
+}
+
+.code-icon {
+    z-index: 0;
+    position: absolute;
+    right: 30px;
+}
+.code-icon i{
+    color: #00000065;
+    margin-top: -80px;
+    font-size: 120pt;
 }
