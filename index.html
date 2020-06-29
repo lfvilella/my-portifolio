@@ -98,10 +98,6 @@
     </div>
   </section>
 
-  <div id="myProgress">
-    <div id="myBar"></div>
-    <button onclick="move()">Click Me</button>
-  </div>
 
   <section class="my-skills" id="mySkills">
     <div class="container">
@@ -277,6 +273,37 @@
   </section>
 
 
+  <section class="about-me" id="aboutMe">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="title-me">
+            <h1>MY PROJECTS</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1 offset "></div>
+        <div class="col-md-10">
+          <div class="info-me">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, soluta. Quae praesentium eveniet in est aut
+              atque consequatur a, nesciunt optio, veniam autem qui molestiae. Sequi incidunt natus placeat a.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, nobis consequatur. In, perferendis ad
+              similique sapiente alias, rerum deleniti voluptatibus quis officiis dolorem esse tempore repudiandae?
+              Expedita est pariatur ex.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="code-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+    </div>
+  </section>
+
+
+
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -289,24 +316,6 @@
     crossorigin="anonymous"></script>
 
   <script>
-    var i = 0;
-    function move() {
-      if (i == 0) {
-        i = 1;
-        var elem = document.getElementById("myBar");
-        var width = 1;
-        var id = setInterval(frame, 10);
-        function frame() {
-          if (width >= 100) {
-            clearInterval(id);
-            i = 0;
-          } else {
-            width++;
-            elem.style.width = width + "%";
-          }
-        }
-      }
-    }
   </script>
 </body>
 
