@@ -1,3 +1,7 @@
+section{
+    margin-bottom: 35px;
+}
+
 /* ************************************* */
 
 /**************** Slider *****************/
@@ -90,9 +94,9 @@
 
 .social-networks a.fab {
     color: white;
-    font-size: 22px;
+    font-size: 30px;
     padding: 10px;
-    margin-right: 2px;
+    margin-right: 12px;
     border: 1px solid white;
     border-radius: 50px;
     transition: all 0.5s ease-in;
@@ -129,24 +133,19 @@
 
 /* ************************************* */
 
-.about-me{
-    background-color: #000000d8;
+.about-me {
     height: 65vh;
+    margin-bottom: 65px;
 }
 
-.title-me{
-    position: absolute;
-    text-align: center;
-    margin-top: 40px;
-    color: #00000081;
-    z-index: 0;
+.title-me {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    color: #0000008f;
 }
-.title-me h1{
+
+.title-me h1 {
     font-size: 70pt;
-}
-
-.about-me .row{
-    padding-top: 15%;
 }
 
 .info-me {
@@ -156,13 +155,35 @@
     padding: 50px 80px;
 }
 
+.info-me p{
+    margin: 0;
+}
+
 .code-icon {
     z-index: 0;
     position: absolute;
-    right: 30px;
+    right: 50px;
 }
-.code-icon i{
+
+.code-icon i {
     color: #00000065;
     margin-top: -80px;
     font-size: 120pt;
+}
+
+/* ************************************* */
+
+/*************** ABOUT ME ****************/
+
+/* ************************************* */
+
+.my-skills{
+    height: 100vh;
+    color: #ffffff85;
+}
+
+ul.skills{
+    list-style: none;
+    color: #ffffffde;
+    letter-spacing: 1px;
 }
