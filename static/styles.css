@@ -330,11 +330,8 @@ ul.skills {
 /* ************************************* */
 
 .footer {
-    background-image: url('img/bg-footer-min.jpg');
-    background-size: cover;
-    background-attachment: fixed;
     padding-top: 145px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
 }
 
 .social-icon a {
