@@ -197,12 +197,14 @@ ul.skills {
 .row-info-progressive h3 {
     font-size: 15pt;
 }
+
 .row-info-progressive .progress {
     width: 100%;
     height: 10px;
     margin-top: 8px;
     margin-left: 5px;
 }
+
 .row-info-progressive h4 {
     font-size: 8pt;
     margin-top: 8px;
@@ -223,18 +225,18 @@ ul.skills {
     margin-bottom: 0;
 }
 
-.my-project .container-fluid{
+.my-project .container-fluid {
     width: 100vw;
     height: 100%;
     background-color: #00030c4b;
 }
 
-.my-project .title-me{
+.my-project .title-me {
     color: #ffffffec;
     text-shadow: 0px 3px 3px rgb(207, 1, 36);
 }
 
-.list-projects{
+.list-projects {
     width: auto;
     margin: 0 auto;
     list-style: none;
@@ -242,7 +244,7 @@ ul.skills {
     padding: 0;
 }
 
-.title-proj{
+.title-proj {
     cursor: pointer;
     margin-right: 10px;
     font-size: 18pt;
@@ -255,37 +257,40 @@ ul.skills {
     box-shadow: 0px 2px 4px #ff0000;
 }
 
-.list-projects li.title-proj:last-child{
+.list-projects li.title-proj:last-child {
     margin-right: 0px;
 }
 
-.title-proj:hover{
+.title-proj:hover {
     background-color: #ffffff;
     text-decoration: none !important;
     color: #000000 !important;
 }
 
-.carousel{
+.carousel {
     margin: 0 auto;
     border: 1px solid white;
     border-radius: 10px;
 }
 
-.look-up{
+.look-up {
     position: absolute;
     top: 10px;
     right: 15px;
     color: #000000;
     z-index: 1000;
 }
-.look-up a{
+
+.look-up a {
     color: #000000;
 }
-.look-up a:hover{
+
+.look-up a:hover {
     text-decoration: none;
     color: #00000098;
 }
-.look-up i{
+
+.look-up i {
     font-size: 18pt;
     padding: 5px 6px;
     background-color: #ffffff;
@@ -294,7 +299,7 @@ ul.skills {
     box-shadow: 0px 4px 2px #000000a8;
 }
 
-.carousel-inner img{
+.carousel-inner img {
     border-radius: 10px;
 }
 
@@ -306,14 +311,66 @@ ul.skills {
     border-bottom-left-radius: 10px;
 }
 
-.cards-about h2{
+.cards-about h2 {
     color: #ffffff;
     font-weight: 700;
     text-shadow: -1px 1px 10px #000000;
 }
 
-.cards-about p{
+.cards-about p {
     margin-bottom: 2px;
     margin-left: 10px;
     text-align: justify;
+}
+
+/* ************************************* */
+
+/**************** FOOTER *****************/
+
+/* ************************************* */
+
+.footer {
+    background-image: url('img/bg-footer.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 145px;
+    padding-bottom: 120px;
+}
+
+.social-icon a {
+    margin: 0 16px 20px 16px;
+    display: inline-block;
+}
+
+.footer .fab {
+    font-size: 30px;
+    color: #000000;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 2;
+    border: 10px solid #000000a9;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.social-icon a:hover .fab {
+    color: #821423;
+    border-color: white;
+    transform: rotate(360deg);
+}
+
+.copyright {
+    color: white;
+}
+
+.copyright .border-bottom {
+    background-color: white;
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 20px;
 }
