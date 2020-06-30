@@ -219,13 +219,13 @@ ul.skills {
     background-image: url('img/bg-proj.jpg');
     background-attachment: fixed;
     background-position: center;
-    height: 150vh;
+    height: 100%;
     margin-bottom: 0;
 }
 
 .my-project .container-fluid{
     width: 100vw;
-    height: 150vh;
+    height: 100%;
     background-color: #00030c4b;
 }
 
@@ -296,4 +296,24 @@ ul.skills {
 
 .carousel-inner img{
     border-radius: 10px;
+}
+
+.cards-about {
+    background-color: #ffffff9f;
+    margin-bottom: 30px;
+    padding: 10px 20px 10px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cards-about h2{
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: -1px 1px 10px #000000;
+}
+
+.cards-about p{
+    margin-bottom: 2px;
+    margin-left: 10px;
+    text-align: justify;
 }
