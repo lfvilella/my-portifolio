@@ -208,3 +208,28 @@ ul.skills {
     margin-top: 8px;
     margin-left: 5px;
 }
+
+/* ************************************* */
+
+/**************** MY PROJ ****************/
+
+/* ************************************* */
+
+.my-project {
+    background-image: url('img/bg-proj.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.my-project .container-fluid{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00030c4b;
+}
+
+.my-project .title-me{
+    color: #ffffffec;
+    text-shadow: 0px 3px 3px rgb(207, 1, 36);
+}
