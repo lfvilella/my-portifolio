@@ -11,7 +11,7 @@ section {
 .slider {
     width: 100vw;
     height: 100vh;
-    background-image: url('img/bg-slider.jpg');
+    background-image: url('img/bg-slider-min.jpg');
     background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,7 +218,7 @@ ul.skills {
 /* ************************************* */
 
 .my-project {
-    background-image: url('img/bg-proj.jpg');
+    background-image: url('img/bg-proj-min.jpg');
     background-attachment: fixed;
     background-position: center;
     height: 100%;
@@ -330,7 +330,7 @@ ul.skills {
 /* ************************************* */
 
 .footer {
-    background-image: url('img/bg-footer.jpg');
+    background-image: url('img/bg-footer-min.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding-top: 145px;
