@@ -233,3 +233,19 @@ ul.skills {
     color: #ffffffec;
     text-shadow: 0px 3px 3px rgb(207, 1, 36);
 }
+
+.title-proj{
+    font-size: 18pt;
+    background-color: #ffffff63;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 8px 13px;
+    color: #000000;
+    transition: 0.5s ease;
+    box-shadow: 0px 2px 4px #ff0000;
+}
+.title-proj:hover{
+    background-color: #ffffffe7;
+    text-decoration: none !important;
+    color: #000000 !important;
+}
