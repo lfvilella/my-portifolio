@@ -219,13 +219,13 @@ ul.skills {
     background-image: url('img/bg-proj.jpg');
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    height: 150vh;
     margin-bottom: 0;
 }
 
 .my-project .container-fluid{
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: #00030c4b;
 }
 
@@ -234,7 +234,17 @@ ul.skills {
     text-shadow: 0px 3px 3px rgb(207, 1, 36);
 }
 
+.list-projects{
+    width: auto;
+    margin: 0 auto;
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+
 .title-proj{
+    cursor: pointer;
+    margin-right: 10px;
     font-size: 18pt;
     background-color: #ffffff63;
     border: 2px solid white;
@@ -244,8 +254,23 @@ ul.skills {
     transition: 0.5s ease;
     box-shadow: 0px 2px 4px #ff0000;
 }
+
+.list-projects li.title-proj:last-child{
+    margin-right: 0px;
+}
+
 .title-proj:hover{
     background-color: #ffffffe7;
     text-decoration: none !important;
     color: #000000 !important;
+}
+
+.carousel{
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.carousel-inner img{
+    border-radius: 11px;
 }
