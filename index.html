@@ -19,6 +19,10 @@
   <!-- Link Styles -->
   <link rel="stylesheet" href="static/styles.css">
 
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+    integrity="sha256-6hqHMqXTVEds1R8HgKisLm3l/doneQs+rS1a5NLmwwo=" crossorigin="anonymous" />
+
   <title>Luís Felipe Vilella</title>
   <style>
     body {
@@ -78,7 +82,7 @@
   <section class="about-me" id="aboutMe">
     <div class="container">
       <div class="row">
-        <div class="col-xl-12">
+        <div class="col-xl-12 wow animate__animated animate__zoomInDown">
           <div class="title-me">
             <h1>ABOUT ME</h1>
           </div>
@@ -87,7 +91,7 @@
       <div class="row">
         <div class="col-sm-1 offset "></div>
         <div class="col-md-10">
-          <div class="info-me">
+          <div class="info-me wow animate__animated animate__fadeInRight">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, soluta. Quae praesentium eveniet in est aut
               atque consequatur a, nesciunt optio, veniam autem qui molestiae. Sequi incidunt natus placeat a.
@@ -106,7 +110,7 @@
 
 
   <section class="my-skills" id="mySkills">
-    <div class="container">
+    <div class="container wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
       <div class="row">
         <div class="col-xl-12">
           <div class="title-me">
@@ -374,7 +378,7 @@
 
       <div class="row text-center" id="projInfo">
         <div class="col-xl-12">
-          <div class="title-me">
+          <div class="title-me wow animate__animated animate__fadeIn" data-wow-delay=".3s">
             <h1 style="font-size: 33pt;">ABOUT PROJECTS</h1>
           </div>
         </div>
@@ -382,14 +386,14 @@
 
       <div class="container">
         <div class="row justify-content-around">
-          <div class="col-sm-5 cards-about">
+          <div class="col-sm-5 cards-about wow animate__animated animate__flipInX" data-wow-delay=".4s">
             <h2>Accounting</h2>
             <p>
               This website is an accounting company, allowing users to search and check documents of their companies.
               Used also HTML5, CSS3 and JS for frontend and Python+Django as backend
             </p>
           </div>
-          <div class="col-sm-5 cards-about">
+          <div class="col-sm-5 cards-about wow animate__animated animate__flipInX" data-wow-delay=".4s">
             <h2>ToolsAPI</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa, earum magni facilis veritatis unde,
@@ -397,7 +401,7 @@
               tenetur repellendus.
             </p>
           </div>
-          <div class="col-sm-5 cards-about">
+          <div class="col-sm-5 cards-about wow animate__animated animate__flipInX" data-wow-delay=".4s">
             <h2>xyzCréditos</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa, earum magni facilis veritatis unde,
@@ -405,7 +409,7 @@
               tenetur repellendus.
             </p>
           </div>
-          <div class="col-sm-5 cards-about">
+          <div class="col-sm-5 cards-about wow animate__animated animate__flipInX" data-wow-delay=".4s">
             <h2>Gym</h2>
             <p>
               This app allows the gym company to provide its students with a complete website with workout table,
@@ -418,7 +422,7 @@
               <b>Admin Password: 123</b>
             </p>
           </div>
-          <div class="col-sm-5 cards-about">
+          <div class="col-sm-5 cards-about wow animate__animated animate__flipInX" data-wow-delay=".4s">
             <h2>Pizzaria</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa, earum magni facilis veritatis unde,
@@ -437,13 +441,17 @@
             <div class="col-sm-12 text-center">
               <div class="social-icon">
                 <a href="https://github.com/lfvilella" target="_blank">
-                  <i class="fab fa-github wow animate__animated animate__fadeInLeft"></i></a>
+                  <i class="fab fa-github wow animate__animated animate__fadeInLeft" data-wow-duration="0.34s"
+                    data-wow-delay=".1s"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=5514996797600" target="_blank">
-                  <i class="fab fa-whatsapp wow animate__animated animate__fadeInLeft"></i></a>
+                  <i class="fab fa-whatsapp wow animate__animated animate__fadeInLeft" data-wow-duration="0.34s"
+                    data-wow-delay=".3s"></i></a>
                 <a href="mailto:vilella.luisfelipe@gmail.com" target="_blank">
-                  <i class="fab fas fa-envelope wow animate__animated animate__fadeInLeft"></i></a>
+                  <i class="fab fas fa-envelope wow animate__animated animate__fadeInLeft" data-wow-duration="0.34s"
+                    data-wow-delay=".5s"></i></a>
                 <a href="https://www.linkedin.com/in/lfvilella" target="_blank">
-                  <i class="fab fa-linkedin wow animate__animated animate__fadeInLeft"></i></a>
+                  <i class="fab fa-linkedin wow animate__animated animate__fadeInLeft" data-wow-duration="0.34s"
+                    data-wow-delay=".7s"></i></a>
               </div>
               <br>
               <div class="copyright">
@@ -473,6 +481,10 @@
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- CDN WOW JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
 
   <!-- Main.JS -->
   <script src="static/script.js"></script>

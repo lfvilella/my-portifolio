@@ -45,4 +45,4 @@ win.addEventListener('click', closeMenu, false);
 
 
 
-// new WOW().init();
+new WOW().init();
