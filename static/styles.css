@@ -10,7 +10,7 @@ section {
 
 .navigation-wrapper {
     position: relative;
-    z-index: 1000;
+    z-index: 1000000;
 }
 
 .navigation-button {
