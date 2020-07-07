@@ -1,0 +1,52 @@
+- name: Accounting
+  page_url: /accounting.html
+  img_url: /static/img/accounting-min.png
+  description: >
+    This website is an accounting company, allowing users to search and check documents of their companies. 
+    Used also HTML5, CSS3 and JS for frontend and Python+Django as backend
+  project_url: https://vilella.vip/
+  github_url: 
+  
+- name: ToolsAPI
+  page_url:
+  img_url: /static/img/django-rest-min.png
+  description: >
+    This application is an <a href="https://bossabox.com" target="_blank" style="color: #383838;">bossabox
+    challenge</a> where
+    I did develop it with Django-Rest and Postgres.
+  project_url: http://bossabox-api.lfvilella.com/
+  github_url: https://github.com/lfvilella/django-rest-api
+
+- name: xyzCréditos
+  page_url:
+  img_url: /static/img/xyzcreditos-min.png
+  description: >
+    This project is really cool, I created it using Python Fastapi, Sqlalchemy, Vuejs and more. This is a
+    little copy about <a href="https://www.serasa.com.br" target="_blank" style="color: #383838;">SERASA</a>,
+    where people add debtors and every can see who is owing. That ideia to create
+    this application was the UENP-CCT course.
+  project_url: http://xyzcreditos.lfvilella.com/
+  github_url: https://github.com/lfvilella/fastapi-fullstack
+
+- name: Gym
+  page_url:
+  img_url: /static/img/gym-min.png
+  description: >
+    This app allows the gym company to provide its students with a complete website with workout table,
+    periodization, progress and more. Used HTML5/CSS3/JS for frontend and Python+Django as backend.
+    <a href="http://gym-proj.lfvilella.com/admin/" target="_blank" style="color: #000000;"><b>Check Admin
+        Page_url</b></a>
+    <br>
+    <b>Admin User: root</b>
+    <br>
+    <b>Admin Password: 123</b>
+  project_url: http://gym-proj.lfvilella.com/
+  github_url: https://github.com/lfvilella/gym-django
+
+- name: Pizzaria
+  page_url:
+  img_url: /static/img/pizzaria-min.png
+  description: >
+    This website is a simple marketing to local pizzeria and I use HTML / CSS / JS to build.
+  project_url: https://ponto-z.lfvilella.com/
+  github_url: 
