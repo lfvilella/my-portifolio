@@ -2,7 +2,7 @@ version: '3.7'
 services:
 
   app:
-    build: 
+    build:
         dockerfile: ./Dockerfile
         context: .
     ports:
@@ -12,4 +12,4 @@ services:
     working_dir: /app
     stdin_open: true
     tty: true
-    command: ${RUNSERVER:-jekyll serve --host 0.0.0.0}
+    command: ${RUNSERVER:-jekyll serve}

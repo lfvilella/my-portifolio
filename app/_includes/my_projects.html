@@ -11,8 +11,8 @@
       <div class="row text-center">
         <div class="col-md-12">
           <ul class="list-projects">
-            {% for project in site.data.projects %}
-              <li class="title-proj" data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index }}">{{project.name}}</li>
+            {% for project in site.projects %}
+              <li class="title-proj" data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 }}">{{project.title}}</li>
             {% endfor %}
           </ul>
         </div>
@@ -23,18 +23,18 @@
       <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            {% for project in site.data.projects %}
-              <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index }}"></li>
+            {% for project in site.projects %}
+              <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 }}"></li>
             {% endfor %}
           </ol>
           <div class="carousel-inner">
 
-            {% for project in site.data.projects %}
-            <div class="carousel-item {% if forloop.index == 1%}active{% endif %}">
+            {% for project in site.projects %}
+            <div class="carousel-item {% if forloop.index0 == 0%}active{% endif %}">
               <div class="look-up">
-                {% if project.page_url %}
-                <a href="{{ project.page_url }}"></a><i class="fab fa-github"></i></a>
-                {% endif %}
+                <!-- {% if project.url %}
+                <a href="{{ project.url }}"></a><i class="fab fa-github"></i></a>
+                {% endif %} -->
                 {% if project.github_url %}
                 <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 {% endif %}
@@ -68,9 +68,9 @@
 
       <div class="container">
         <div class="row justify-content-around">
-          {% for project in site.data.projects %}
+          {% for project in site.projects %}
           <div class="col-sm-5 cards-about wow animate__animated animate__flipInX" data-wow-delay=".4s">
-            <h2>{{ project.name }}</h2>
+            <h2>{{ project.title }}</h2>
             <div class="look-up">
               {% if project.github_url %}
               <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -88,6 +88,5 @@
       <br><br><br><br>
 
       {% include footer.html %}
-      
     </div>
   </section>

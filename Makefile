@@ -15,7 +15,7 @@ cmd: start ## Access bash
 	@docker-compose exec app /bin/bash
 
 up: start ## Start dev server
-	@docker-compose exec app jekyll serve --host 0.0.0.0
+	@docker-compose exec app jekyll serve
 
 start:
 	@docker-compose start
