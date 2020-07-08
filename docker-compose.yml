@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+
+  app:
+    build:
+        dockerfile: ./Dockerfile
+        context: .
+    ports:
+        - "4000:4000"
+    volumes:
+        - ./:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: ${RUNSERVER:-jekyll serve}

@@ -1,2 +1,6 @@
+.vscode
 .DS_Store
 img-links.txt
+.env
+_site
+**/**/.jekyll-cache
