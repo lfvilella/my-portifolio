@@ -1,6 +1,6 @@
 source: ./app
-layouts_dir: _layouts
-includes_dir: _includes
+layouts_dir: /_layouts
+includes_dir: /_includes
 collections:
     projects:
         output: true
