@@ -1,5 +1,6 @@
 source: ./app
-destination: ./_gh_pages
+layouts_dir: ./app/_layouts
+includes_dir: ./app/_includes
 collections:
     projects:
         output: true
