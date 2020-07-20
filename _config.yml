@@ -1,4 +1,4 @@
-source: ./app
+source: .
 
 collections:
     projects:
