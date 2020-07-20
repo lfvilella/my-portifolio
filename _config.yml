@@ -1,4 +1,5 @@
 source: ./app
+layouts_dir: ./app/_layouts
 includes_dir: ./app/_includes
 collections:
     projects:
