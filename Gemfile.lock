@@ -242,7 +242,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (~> 206)
+  jekyll (~> 3.8.7)
 
 BUNDLED WITH
    2.1.4
