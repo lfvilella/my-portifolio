@@ -1,4 +1,5 @@
 source: ./app
+includes_dir: ./app/_includes
 collections:
     projects:
         output: true
