@@ -1,7 +1,5 @@
 source: ./app
-collections_dir: ./
-layouts_dir: ./_layouts
-includes_dir: ./_includes
+
 collections:
     projects:
         output: true
