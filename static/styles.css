@@ -10,6 +10,10 @@ nav {
     width: 100%;
 }
 
+nav ul.navigation li.nav-with-bars {
+    display: none;
+}
+
 nav ul.navigation {
     list-style-type: none;
     margin: 0;
@@ -19,6 +23,10 @@ nav ul.navigation {
 
 nav ul.navigation li {
     float: left;
+}
+
+nav ul.navigation li.float-right {
+    float: right;
 }
 
 nav ul.navigation li a {
@@ -34,8 +42,6 @@ nav ul.navigation li a:hover {
     color: white;
     text-decoration: none;
 }
-
-/* ************************************* */
 
 /* ************************************* */
 
@@ -147,12 +153,6 @@ nav ul.navigation li a:hover {
     margin-bottom: 70px;
 }
 
-@media(max-width:370px) {
-    .btn1, .btn2 {
-        font-size: 10px;
-    }
-}
-
 /* ************************************* */
 
 /*************** ABOUT ME ****************/
@@ -196,49 +196,6 @@ nav ul.navigation li a:hover {
     font-size: 120pt;
 }
 
-@media(max-width:800px) {
-    .code-icon {
-        right: -60px;
-        bottom: -50px;
-    }
-    .code-icon i {
-        font-size: 100pt;
-    }
-}
-
-@media(max-width:665px) {
-    .code-icon {
-        right: 15px;
-        bottom: 5px;
-    }
-    .code-icon i {
-        color: #ffffff36;
-        font-size: 50pt;
-    }
-    .title-me h1 {
-        font-size: 60pt;
-    }
-}
-
-@media(max-width:483px) {
-    .info-me {
-        padding: 40px;
-        padding-bottom: 50px;
-    }
-    .title-me h1 {
-        font-size: 45pt;
-    }
-    .title-me {
-        padding-bottom: 15px;
-    }
-}
-
-@media(max-width:369px) {
-    .about-me {
-        margin-bottom: 150px;
-    }
-}
-
 /* ************************************* */
 
 /*************** MY SKILLS ****************/
@@ -246,7 +203,6 @@ nav ul.navigation li a:hover {
 /* ************************************* */
 
 .my-skills {
-    height: 100vh;
     color: #ffffff85;
 }
 
@@ -302,15 +258,19 @@ ul.skills {
     text-shadow: 0px 3px 3px rgb(207, 1, 36);
 }
 
-.my-project .card{
+.my-project .padding-card-columns {
+    padding: 0 50px;
+}
+
+.my-project .card {
     transition: ease .3s;
 }
-.my-project .card:hover{
+
+.my-project .card:hover {
     box-shadow: 0 0 12px red;
     transform: translate(0, 3px);
     border-color: black !important;
 }
-
 
 /* ************************************* */
 
@@ -427,5 +387,92 @@ ul.skills {
     }
     to {
         opacity: 1;
+    }
+}
+
+/* ************************************* */
+
+/**************** @MEDIA *****************/
+
+/* ************************************* */
+
+@media(max-width:800px) {
+    /******* NAVBAR *******/
+    nav ul.navigation li.float-right {
+        display: none;
+    }
+    nav ul.navigation li.nav-with-bars {
+        display: block;
+        float: right;
+        margin-top: 10px;
+    }
+    nav ul.navigation li.nav-with-bars .navigation-button {
+        border: none;
+        border-radius: 10px;
+    }
+    nav ul.navigation li.nav-with-bars .navigation-button i {
+        font-size: 16pt;
+        padding: 5px 2px;
+    }
+    nav ul.navigation li.nav-with-bars a.links-to-page {
+        color: black;
+        padding: 0;
+    }
+    /******* ABOUT ME *******/
+    .code-icon {
+        right: -60px;
+        bottom: -50px;
+    }
+    .code-icon i {
+        font-size: 100pt;
+    }
+}
+
+@media(max-width:665px) {
+    .code-icon {
+        display: none;
+    }
+    .title-me h1 {
+        font-size: 60pt;
+    }
+    .info-me {
+        padding: 40px;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width:600px) {
+    nav {
+        padding: 20px 20px;
+    }
+    .my-project .padding-card-columns {
+        padding: 0 10px;
+    }
+}
+
+@media(max-width:483px) {
+    .title-me h1 {
+        font-size: 45pt;
+    }
+    .title-me {
+        padding-bottom: 15px;
+    }
+}
+
+@media(max-width:370px) {
+    .title-me h1 {
+        font-size: 42pt;
+    }
+    .about-me {
+        margin-bottom: 45px;
+    }
+    .btn1, .btn2 {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:320px) {
+    .slider-content {
+        top: 24%;
     }
 }
