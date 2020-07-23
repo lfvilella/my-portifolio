@@ -6,95 +6,37 @@ layout: base
 <section class="my-project" id="MyProject">
   <div class="container-fluid">
     {% include navbar.html %}
-    <div class="row text-center">
-      <div class="col-xl-12">
-        <div class="title-me">
-          <h1 class="my-proj-title">MY PROJECTS</h1>
-        </div>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-12">
-        <ul class="list-projects">
-          {% for project in site.projects %}
-          <li class="title-proj" data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 }}">
-            {{project.title}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
 
     <br><br>
 
-    <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          {% for project in site.projects %}
-          <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 }}"></li>
-          {% endfor %}
-        </ol>
-        <div class="carousel-inner">
-
-          {% for project in site.projects %}
-          <div class="carousel-item {% if forloop.index0 == 0%}active{% endif %}">
-            <div class="look-up">
-              <!-- {% if project.url %}
-                <a href="{{ project.url }}"></a><i class="fab fa-github"></i></a>
-                {% endif %} -->
-              {% if project.github_url %}
-              <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer"><i
-                  class="fab fa-github"></i></a>
-              {% endif %}
-              <a href="{{project.project_url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa-eye"></i></a>
-            </div>
-            <img class="d-block w-100" src="{{project.img_url}}" alt="Slide">
-          </div>
-          {% endfor %}
-
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+    <div class="row text-center" id="projInfo">
+      <div class="col-xl-12">
+        <div class="title-me">
+          <h1>MY PROJECTS</h1>
         </div>
       </div>
-
-      <br>
-
-      <div class="row text-center" id="projInfo">
-        <div class="col-xl-12">
-          <div class="title-me wow animate__animated animate__fadeIn" data-wow-delay=".3s">
-            <h1 style="font-size: 33pt;">ABOUT PROJECTS</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-around">
-          {% for project in site.projects %}
-          <div class="col-sm-5 cards-about wow animate__animated animate__flipInX" data-wow-delay=".4s">
-            <h2>{{ project.title }}</h2>
-            <div class="look-up">
-              {% if project.github_url %}
-              <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer"><i
-                  class="fab fa-github"></i></a>
-              {% endif %}
-              <a href="{{ project.project_url }}" target="_blank"><i class="fas fa-eye"></i></a>
-            </div>
-            <p>
-              {{ project.description }}
-            </p>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
-      <br><br><br><br>
-
-      {% include footer.html %}
     </div>
+
+    <br>
+
+    <div class="card-columns" style="padding: 0 50px;">
+      {% for project in site.projects %}
+      <div class="card">
+        <img class="card-img-top" src="{{project.img_url}}" style="border-bottom: 1px solid black;">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+          {% if project.github_url %}
+          <a class="btn btn-dark" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i></a>
+          {% endif %}
+          <a class="btn btn-dark" href="{{project.project_url}}" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-eye"></i></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% include footer.html %}
+  </div>
 </section>
