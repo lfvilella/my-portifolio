@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+
+<section class="my-project" id="MyProject">
+  <div class="container-fluid">
+    {% include navbar.html %}
+
+    <br><br>
+
+    <div class="row text-center" id="projInfo">
+      <div class="col-xl-12">
+        <div class="title-me">
+          <h1>MY PROJECTS</h1>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="card-columns padding-card-columns">
+      {% for project in site.projects %}
+      <div class="card">
+        <img class="card-img-top" src="{{project.img_url}}" style="border-bottom: 1px solid black;">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+          {% if project.github_url %}
+          <a class="btn btn-dark" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i></a>
+          {% endif %}
+          <a class="btn btn-dark" href="{{project.project_url}}" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-eye"></i></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% include footer.html %}
+  </div>
+</section>

@@ -3,53 +3,26 @@ layout: base
 title: Luis Felipe Vilella
 ---
 
-  <div class="navigation-wrapper">
-    <div class="navigation-button">
-      <i class="fas fa-bars" id="faa"></i>
-    </div>
 
-    <div class="navigation-menu">
-      <ul>
-        <li><a class="my-nav-link" href="#slider">HOME</a></li>
-        <li><a class="my-nav-link" href="#aboutMe">ABOUT</a></li>
-        <li><a class="my-nav-link" href="#mySkills">SKILLS</a></li>
-        <li><a class="my-nav-link" href="#MyProject">PROJECTS</a></li>
-        <li><a class="my-nav-link" href="#projInfo">PROJECTS INFO</a></li>
-        <li><a class="my-nav-link" href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <section class="slider text-center" id="slider">
-    <div class="slider-overlay">
-      <div class="slider-content">
-        <img class="my-photo" src="static/img/me-min.jpg">
-        <div class="icons">
-          <h2 class="able-on">Able on</h2>
-          <i class="fab fa-apple"></i>
-          <i class="fab fa-android"></i>
-          <i class="fab fa-windows"></i>
-        </div>
-        <br>
-        <div id="text-txt"></div>
-        <div class="cta-div">
-          <a class="btn1 my-nav-link" href="https://api.whatsapp.com/send?phone=5514996797600" target="_blank">
-            CONTACT ME!</a>
-          <a class="btn2 my-nav-link" href="#MyProject">CHECK MY PROJECTS!</a>
-        </div>
-        <br>
-        <div class="social-networks">
-          <a href="https://api.whatsapp.com/send?phone=5514996797600" target="_blank" class="fab fa-whatsapp"></a>
-          <a href="https://github.com/lfvilella" target="_blank" class="fab fa-github"></a>
-          <a href="mailto:vilella.luisfelipe@gmail.com" target="_blank" class="fab fas fa-envelope"></a>
-          <a href="https://www.linkedin.com/in/lfvilella" target="_blank" class="fab fa-linkedin"></a>
-        </div>
+<section class="slider text-center" id="slider">
+  <div class="slider-overlay">
+    {% include navbar.html %}
+    <div class="slider-content">
+      <img class="my-photo wow animate__animated animate__zoomIn" src="static/img/me-min.jpg">
+      <br>
+      <div id="text-txt"></div>
+      <div class="cta-div">
+        <a class="btn1 my-nav-link" href="https://api.whatsapp.com/send?phone=5514996797600" target="_blank">
+          CONTACT ME!</a>
+        <a class="btn2 my-nav-link" href="#MyProject">CHECK MY PROJECTS!</a>
+      </div>
+      <br>
+      <div class="social-networks">
+        <a href="https://api.whatsapp.com/send?phone=5514996797600" target="_blank" class="fab fa-whatsapp"></a>
+        <a href="https://github.com/lfvilella" target="_blank" class="fab fa-github"></a>
+        <a href="mailto:vilella.luisfelipe@gmail.com" target="_blank" class="fab fas fa-envelope"></a>
+        <a href="https://www.linkedin.com/in/lfvilella" target="_blank" class="fab fa-linkedin"></a>
       </div>
     </div>
-  </section>
-
-  {% include about_me.html %}
-
-  {% include my_skills.html %}
-
-  {% include my_projects.html %}
+  </div>
+</section>
