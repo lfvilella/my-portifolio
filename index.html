@@ -30,8 +30,10 @@ title: Luis Felipe Vilella
         <a class="btn btn-git" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i></a>
         {% endif %}
+        {% if project.project_url %}
         <a class="btn" href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">
           View Demo</a>
+        {% endif %}
       </div>
     </div>
   </div>
