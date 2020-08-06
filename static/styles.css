@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #fc5185;
+    --second-color: #364f6b;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +15,7 @@ body {
 
 .title {
     font-size: 50pt;
-    color: #fc5185;
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
@@ -40,7 +45,7 @@ nav {
 
 #navigation li a i.fab {
     font-size: 29pt;
-    color: #fc5185;
+    color: var(--primary-color);
 }
 
 #navigation li a {
@@ -52,7 +57,7 @@ nav {
 }
 
 #navigation li a:hover {
-    color: #fc5185;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -60,7 +65,7 @@ nav {
 
 .header-home {
     padding: 50px 25px;
-    background-color: #364f6b;
+    background-color: var(--second-color);
     color: #fafafa;
 }
 
@@ -91,7 +96,7 @@ nav {
 }
 
 .card-project .info .btn {
-    background-color: #fc5185;
+    background-color: var(--primary-color);
     border: 1px solid transparent;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
     color: #ffffff;
@@ -115,8 +120,8 @@ nav {
 
 .card-project .info .btn:hover {
     background-color: #ffffff;
-    color: #fc5185;
-    border-color: #fc5185;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
     transform: scale(1.05);
 }
 
@@ -154,9 +159,9 @@ nav {
 /* Footer */
 
 .footer {
-    border-top: 4px solid #fc5185;
+    border-top: 4px solid var(--primary-color);
     padding: 60px 0 40px 0;
-    background-color: #364f6b;
+    background-color: var(--second-color);
 }
 
 .social-icon a {
@@ -166,7 +171,7 @@ nav {
 
 .footer .fab {
     font-size: 30px;
-    color: #364f6b;
+    color: var(--second-color);
     background-color: white;
     width: 80px;
     height: 80px;
@@ -179,7 +184,7 @@ nav {
 }
 
 .social-icon a:hover .fab {
-    color: #fc5185;
+    color: var(--primary-color);
     border-color: white;
     transform: rotate(360deg);
 }
