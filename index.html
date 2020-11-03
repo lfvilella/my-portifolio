@@ -31,7 +31,8 @@ title: Luis Felipe Vilella
           <i class="fab fa-github"></i></a>
         {% endif %}
         {% if project.project_url %}
-        <a class="btn" href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">
+        <a class="btn disabled" href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer" role="button"
+          aria-disabled="true">
           View Demo</a>
         {% endif %}
       </div>
