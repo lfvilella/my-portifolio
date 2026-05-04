@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --background: 240 10% 2%;
+    --foreground: 0 0% 96%;
+    --primary: 217 91% 60%; /* Blue 500 */
+    --border: 240 5% 10%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-[#050505] text-[#F4F4F5] antialiased selection:bg-blue-500 selection:text-white font-sans;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.gradient-border {
+  @apply relative;
+}
+
+.gradient-border::after {
+  content: '';
+  @apply absolute bottom-[-1px] left-0 w-full h-[1px];
+  background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.05) 100%);
+}
+
+.project-card {
+  @apply bg-white/3 border border-white/8 transition-all duration-300 hover:border-white/20;
+}
+
+.dot {
+  @apply w-2 h-2 rounded-full bg-blue-500;
+}
+
+.text-gradient {
+  @apply text-white; /* Simplifying for the cleaner 'Elegant Dark' look */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#050505];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 rounded-full hover:bg-zinc-700 transition-colors;
+}
